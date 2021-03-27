@@ -1,8 +1,4 @@
-# Transactionality in Spring Boot with Example 
-Transactionality with Spring JDBC Template with an example
+A correction to a Youtube tutorial https://www.youtube.com/watch?v=V01jjyq7MS8 
+, specifically to actions performed at 19:25
 
-### Version Used
-- Spring Boot with JDBC - 1.5.15.RELEASE
-
-### Start
-- `UserRunner` - Starting point for the example which controls the `UserService`
+Read docs in UserRunner.java for explanation on what is missing from the tutorial

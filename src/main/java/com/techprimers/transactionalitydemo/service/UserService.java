@@ -14,7 +14,6 @@ public class UserService {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Transactional
     public void insert(List<User> users) {
 
         for (User user : users) {
@@ -35,6 +34,13 @@ public class UserService {
                 resultSet.getLong("Salary")));
 
         return userList;
+    }
+
+
+    @Transactional
+    public void insertIn2Batches(List<User> usersBatch1, List<User> usersBatch2) {
+        insert(usersBatch1);
+        insert(usersBatch2);
     }
 
 }
